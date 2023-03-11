@@ -1,0 +1,111 @@
+.acr-container {
+    margin: 20px 100px;
+}
+
+.acr-container .acr-body {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    background-color: #f6f8f0;
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+
+.acr-container .acr-body p {
+    margin: 0 0 10px;
+}
+
+.acr-container label {
+    cursor: pointer;
+    background-color: #7d7e7b;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    color: #BFE2FF;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    margin: 10px 0 5px;
+    transition: color 0.725s;
+}
+
+.acr-container input {
+    display: none;
+}
+
+.acr-container label:before {
+    content: '\276F';
+    float: right;
+}
+
+.acr-container input:checked+label {
+    background-color: #969da3;
+    color: #FFF;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+}
+
+.acr-container input:checked+label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+
+.acr-container input:checked+label+.acr-body {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
+}
+
+img.disp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.acr-container label:hover+.acr-body {
+    color: #FFF;
+    opacity: 1;
+    display: block;
+    background-color: #7d7e7b;
+    padding: 15px 20px;
+    width: 100%;
+    color: #BFE2FF;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+    margin: auto;
+    height: auto;
+}
+
+@media (max-width: 820px) {
+    img.disp {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 320px) {
+    img.disp {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 200px;
+
+    }
+
+    .acr-container {
+        margin: 0px 0px;
+    }
