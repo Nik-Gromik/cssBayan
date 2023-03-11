@@ -30,11 +30,11 @@
     width: 100%;
     color: #BFE2FF;
     font-weight: 300;
-    box-sizing: border-box;
     z-index: 100;
     font-family: Verdana, sans-serif;
     font-size: 18px;
     margin: 10px 0 5px;
+    box-sizing: border-box;
     transition: color 0.725s;
 }
 
@@ -109,3 +109,12 @@ img.disp {
     .acr-container {
         margin: 0px 0px;
     }
+
+    .acr-container input:checked+label+.acr-body {
+        height: auto;
+        margin-top: -5px;
+        color: #000;
+        padding: 10px 0px 0px;
+    }
+
+}
